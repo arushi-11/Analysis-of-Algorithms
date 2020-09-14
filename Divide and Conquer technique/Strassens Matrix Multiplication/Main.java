@@ -33,7 +33,7 @@ class Strassens
             split(A, A21, n/2, 0);
             split(A, A22, n/2, n/2);
 
-            //Dividing matrix B into 4 halves! Kaafi together.
+            //Dividing matrix B into 4 halves! Again, shit happens!
             split(B, B11, 0 , 0);
             split(B, B12, 0 , n/2);
             split(B, B21, n/2, 0);
@@ -69,7 +69,7 @@ class Strassens
             int [][] C21 = add(M2, M4);
             int [][] C22 = add(sub(add(M1, M3), M2), M6);
 
-            // join 4 halves into one result matrix!
+            // join 4 halves into one result matrix! Kaafi together! :)
             //C is our resultant matrix! Obvio!
             join(C11, R, 0 , 0);
             join(C12, R, 0 , n/2);
