@@ -1,1 +1,2 @@
-# Analysis of Algorithms. Code in Java!
+# Analysis of Algorithms.
+Code in Java! :D
