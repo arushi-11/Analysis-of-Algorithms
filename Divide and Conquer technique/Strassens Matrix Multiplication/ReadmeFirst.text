@@ -1,0 +1,47 @@
+Strassen's Matrix Multiplication Algorithm!
+
+It is a type of Divide and Conquer algo. 
+   C= A*B 
+where C= matrix of order n*n
+
+Using Brute force algo., we get there is eight multiplication and four addition. Due to which
+complexity is of order O(n^3)
+
+But using Strassen's algo., we reduced our complexity from O(n^3) to O(n^log 7) i.e O(n^2.8).
+Because we reduced our calculation from eight to seven multiplication.. and addition also 
+which takes constant time!
+
+C= A*B
+
+Let us consider two matrices A and B, n*n dimension, 
+where n is a power of two!
+Now, we can contain four n/2*n/2 submatrices
+from A, B and their product C.
+C is the resultant matrix of A and B.
+
+Procedure of Strassen matrix multiplication
+ 1. Divide a matrix of order of n*n recursively till we get the matrix of 2*2.
+ 2. Use the previous set of formulas to carry out 2*2 matrix multiplication.
+ 3. In this we have formula of seven multiplication and four additions, subtraction are performed.
+4. Combine the result of two matrices to find the final product or final matrix.
+
+Formulas for Strassen’s matrix multiplication!
+
+In Strassen’s matrix multiplication there are seven multiplication and four addition, subtraction in total.
+
+D1 =  (a11 + a22) (b11 + b22)
+D2 =  (a21 + a22).b11
+D3 =  (b12 – b22).a11
+D4 =  (b21 – b11).a22
+D5 =  (a11 + a12).b22
+D6 =  (a21 – a11) . (b11 + b12)
+D7 =  (a12 – a22) . (b21 + b22)
+    C11 = D1 + D4 – D5 + D7
+    C12 = D3 + D5
+    C21 = D2 + D4
+    C22 = D1 + D3 – D2 – D6
+
+........ 
+
+Thank you! Toodles.
+
