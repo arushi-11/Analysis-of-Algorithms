@@ -11,7 +11,7 @@ Matrix B of order 4*3
 Matrix C of order 3*5
 
 Now two possible ways of multipling these matrices!
-1. A*(B*C) = 5*4*3 + 5*3*5= 135 scalar multiplications.
+1. (A*B)*C = 5*4*3 + 5*3*5= 135 scalar multiplications.
 2. A*(B*C) = 5*4*5 + 4*3*5 = 160 scalar multiplications.
 
 So, option 1. gives best parenthesis to get minimun miltiplications.
